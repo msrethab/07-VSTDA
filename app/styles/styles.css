@@ -1,0 +1,65 @@
+
+
+/* Styling the header */
+
+h1{
+	margin-bottom: 2.5%;
+  	text-align: center;
+}
+
+/* Styling input Form */
+
+
+.todoForm{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: lightgray;
+	margin-bottom: 2.5%;
+
+}
+
+.todoTextInput{
+	margin-bottom: 5%;
+
+}
+
+.prioritySelectInput{
+	margin-bottom: 5%;
+
+}
+
+.button{
+	margin-bottom: 2.5%;
+
+}
+
+/* Styling the Todo List */
+
+.aHigh {
+	background-color: rgba(255, 82, 82, .3);
+}
+
+.bMedium {
+	background-color: rgba(255, 243, 82, .3);
+}
+
+.cLow {
+	background-color: rgba(82, 191, 255, .3);
+}
+
+/* Styling the footer */
+
+.centFooter {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer {
+  font-size: 0.75em;
+  clear: both;
+  padding-top: 50px
+  color: #ccc;
+  text-align: center;
+}
