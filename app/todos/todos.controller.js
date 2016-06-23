@@ -6,14 +6,14 @@
 
     angular
         .module('myApp')
-        .controller('MainController', MainController);
+        .controller('TodosController', TodosController);
 
-    MainController.$inject = ['$http', 'MainFactory', '$scope'];
+    TodosController.$inject = ['TodosFactory'];
 
     /* @ngInject */
-    function MainController($http, MainFactory, $scope) {
+    function TodosController(TodosFactory) {
         var vm = this;
-        vm.title = 'MainController';
+        vm.title = 'TodosController';
         vm.addTodo = addTodo;
         vm.deleteTodo = deleteTodo;
 
@@ -22,20 +22,21 @@
         ////////////////
 
         function activate() {
-        	MainFactory.getTodos()
+        	TodosFactory.getTodos()
 				.then(function(response) {
 
                 vm.todos = response;
-
+                vm.todoPriority.value = "cLow";
             })
         }
 
         function addTodo(todoName, todoPriority){
-        	MainFactory.addTodo(vm.todos, todoName, todoPriority);
+        	TodosFactory.addTodo(vm.todos, todoName, todoPriority);
         }
 
-        function deleteTodo($index){
-            MainFactory.deleteTodo(vm.todos, $index);
+        function deleteTodo(data){
+            var index = vm.todos.indexOf(data);
+            TodosFactory.deleteTodo(vm.todos, index);
 
         }
     }

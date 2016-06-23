@@ -10,3 +10,13 @@ Version 1.0.0
 -Added order by buttons to sort todo list
 
 -Applied bootstrap stylings for better user experience
+
+
+
+Version 1.0.1
+
+-Fixed a bug that would cause delete button to delete the top term of the list
+
+-Fixed a new bug that would cause delete button to delete item in stored $index value after list is sorted
+
+-Renamed factories and controllers to better match their function

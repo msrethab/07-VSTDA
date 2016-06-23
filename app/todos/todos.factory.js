@@ -6,12 +6,12 @@
 
     angular
         .module('myApp')
-        .factory('MainFactory', MainFactory);
+        .factory('TodosFactory', TodosFactory);
 
-    MainFactory.$inject = ['$http'];
+    TodosFactory.$inject = ['$http'];
 
     /* @ngInject */
-    function MainFactory($http) {
+    function TodosFactory($http) {
         var service = {
             getTodos: getTodos,
             addTodo: addTodo,
