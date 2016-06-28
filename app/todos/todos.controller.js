@@ -21,6 +21,8 @@
 
         ////////////////
 
+        //Initializes with todos.json
+
         function activate() {
         	TodosFactory.getTodos()
 				.then(function(response) {
@@ -29,6 +31,8 @@
                 vm.todoPriority.value = "cLow";
             })
         }
+
+        //Add and delete functions
 
         function addTodo(todoName, todoPriority){
         	TodosFactory.addTodo(vm.todos, todoName, todoPriority);
@@ -41,3 +45,5 @@
         }
     }
 })();
+
+// Reviewed by: RN, MM

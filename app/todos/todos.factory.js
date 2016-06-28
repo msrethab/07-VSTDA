@@ -21,6 +21,8 @@
 
         ////////////////
 
+        // Gets todos from json file
+
         function getTodos() {
             return $http({
                 method: 'GET',
@@ -32,6 +34,8 @@
             });
 
         }
+
+        //Adds and delete todos methods
 
         function addTodo(todos, todoName, todoPriority){
 
@@ -47,3 +51,5 @@
         }
     }
 })();
+
+// Reviewed by: RN MM

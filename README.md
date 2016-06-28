@@ -20,3 +20,11 @@ Version 1.0.1
 -Fixed a new bug that would cause delete button to delete item in stored $index value after list is sorted
 
 -Renamed factories and controllers to better match their function
+
+
+
+Version 1.0.2
+
+-Added explanatory comments to factories and controller
+
+-Code Reviewed by Rick Noguera and Mauro "Fabian" Martinez
